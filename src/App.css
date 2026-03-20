@@ -351,6 +351,35 @@ html, body {
 }
 .meal-select:focus { outline: 2px solid var(--primary); border-color: transparent; }
 
+.meal-text-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: var(--primary-light);
+  color: var(--text);
+  outline: none;
+}
+
+.meal-clear-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.meal-clear-btn:hover { color: #dc2626; border-color: #dc2626; }
+
 .recipe-link {
   color: var(--primary);
   font-size: 16px;
