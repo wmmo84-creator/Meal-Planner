@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { buildShoppingList } from '../utils/shopping.js';
 import { COMMON_ITEMS, HOUSEHOLD_ITEMS, WEEKLY_STAPLES } from '../data/items.js';
+import { getLearnedStaples } from '../utils/learning.js';
 
 function groupBy(items) {
   const groups = {};
@@ -45,7 +46,7 @@ function CheckableItem({ name, qty, checked, onCheck }) {
   );
 }
 
-export default function ShoppingList({ plan, onUpdate }) {
+export default function ShoppingList({ plan, plans, onUpdate }) {
   const [customInput, setCustomInput] = useState('');
   const [activeTab, setActiveTab] = useState('list'); // 'list' | 'common' | 'household'
 
@@ -56,6 +57,40 @@ export default function ShoppingList({ plan, onUpdate }) {
   const commonChecked = plan?.commonChecked || [];
   const householdChecked = plan?.householdChecked || [];
   const customItems = plan?.customItems || [];
+
+  // Items learned from history (selected 3+ times across saved weeks)
+  const learnedStaples = getLearnedStaples(plans || {}, COMMON_ITEMS, HOUSEHOLD_ITEMS);
+
+  function isLearnedActive(item) {
+    if (item.source === 'common') return commonChecked.includes(item.id);
+    if (item.source === 'household') return householdChecked.includes(item.id);
+    if (item.source === 'custom') return customItems.some(
+      (t) => t.toLowerCase().trim() === item.name.toLowerCase().trim()
+    );
+    return false;
+  }
+
+  function toggleLearned(item) {
+    if (item.source === 'common') {
+      const next = commonChecked.includes(item.id)
+        ? commonChecked.filter((k) => k !== item.id)
+        : [...commonChecked, item.id];
+      onUpdate({ commonChecked: next });
+    } else if (item.source === 'household') {
+      const next = householdChecked.includes(item.id)
+        ? householdChecked.filter((k) => k !== item.id)
+        : [...householdChecked, item.id];
+      onUpdate({ householdChecked: next });
+    } else if (item.source === 'custom') {
+      const alreadyIn = customItems.some(
+        (t) => t.toLowerCase().trim() === item.name.toLowerCase().trim()
+      );
+      const next = alreadyIn
+        ? customItems.filter((t) => t.toLowerCase().trim() !== item.name.toLowerCase().trim())
+        : [...customItems, item.name];
+      onUpdate({ customItems: next });
+    }
+  }
 
   function toggleChecked(itemKey) {
     const next = checked.includes(itemKey)
@@ -121,6 +156,26 @@ export default function ShoppingList({ plan, onUpdate }) {
 
       {activeTab === 'list' && (
         <div className="sl-list-view">
+          {/* Learned staples — items selected 3+ times historically */}
+          {learnedStaples.length > 0 && (
+            <div className="sl-section">
+              <h3 className="sl-section-title">📈 Suggested for You</h3>
+              <p className="sl-hint">Based on your shopping history</p>
+              <div className="toggle-grid">
+                {learnedStaples.map((item) => (
+                  <button
+                    key={item.id}
+                    className={`toggle-btn${isLearnedActive(item) ? ' toggle-btn--on' : ''}`}
+                    onClick={() => toggleLearned(item)}
+                    title={`Selected ${item.count}× before`}
+                  >
+                    {item.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Weekly staples quick-add */}
           <div className="sl-section">
             <h3 className="sl-section-title">⭐ Weekly Staples</h3>

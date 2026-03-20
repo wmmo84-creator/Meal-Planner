@@ -139,6 +139,7 @@ export default function App() {
         {tab === 'shopping' && (
           <ShoppingList
             plan={currentPlan}
+            plans={plans}
             onUpdate={updatePlan}
           />
         )}
