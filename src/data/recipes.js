@@ -21,7 +21,7 @@ export const RECIPES = [
     id: 'butter-chicken',
     name: 'Butter Chicken',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/butter-chicken/',
+    url: 'https://www.recipetineats.com/butter-chicken/',
     ingredients: [
       { name: 'Chicken thighs', qty: '800g', section: 'meat', perishable: true },
       { name: 'Plain yoghurt', qty: '1 cup', section: 'dairy', perishable: true },
@@ -37,7 +37,7 @@ export const RECIPES = [
     id: 'chicken-tikka-masala',
     name: 'Chicken Tikka Masala',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/chicken-tikka-masala/',
+    url: 'https://www.recipetineats.com/chicken-tikka-masala/',
     ingredients: [
       { name: 'Chicken breast', qty: '700g', section: 'meat', perishable: true },
       { name: 'Plain yoghurt', qty: '3/4 cup', section: 'dairy', perishable: true },
@@ -53,7 +53,7 @@ export const RECIPES = [
     id: 'honey-garlic-chicken',
     name: 'Honey Garlic Chicken',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/honey-garlic-chicken/',
+    url: 'https://www.recipetineats.com/honey-garlic-chicken/',
     ingredients: [
       { name: 'Chicken thighs (bone-in)', qty: '1kg', section: 'meat', perishable: true },
       { name: 'Garlic', qty: '4 cloves', section: 'produce', perishable: true },
@@ -64,7 +64,7 @@ export const RECIPES = [
     id: 'chicken-schnitzel',
     name: 'Chicken Schnitzel',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/chicken-schnitzel/',
+    url: 'https://www.recipetineats.com/schnitzel/',
     ingredients: [
       { name: 'Chicken breast', qty: '4 large', section: 'meat', perishable: true },
       { name: 'Eggs', qty: '2', section: 'dairy', perishable: true },
@@ -75,7 +75,7 @@ export const RECIPES = [
     id: 'roast-chicken',
     name: 'Roast Chicken',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/roast-chicken/',
+    url: 'https://www.recipetineats.com/roast-chicken/',
     ingredients: [
       { name: 'Whole chicken', qty: '1.8kg', section: 'meat', perishable: true },
       { name: 'Butter', qty: '60g', section: 'dairy', perishable: true },
@@ -90,7 +90,7 @@ export const RECIPES = [
     id: 'creamy-tuscan-chicken',
     name: 'Creamy Tuscan Chicken',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/creamy-tuscan-chicken/',
+    url: 'https://www.recipetineats.com/creamy-tuscan-chicken-soup/',
     ingredients: [
       { name: 'Chicken thighs', qty: '800g', section: 'meat', perishable: true },
       { name: 'Garlic', qty: '4 cloves', section: 'produce', perishable: true },
@@ -104,7 +104,7 @@ export const RECIPES = [
     id: 'chicken-parmigiana',
     name: 'Chicken Parmigiana',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/chicken-parmesan/',
+    url: 'https://www.recipetineats.com/chicken-parmigiana/',
     ingredients: [
       { name: 'Chicken breast', qty: '4 large', section: 'meat', perishable: true },
       { name: 'Eggs', qty: '2', section: 'dairy', perishable: true },
@@ -115,7 +115,7 @@ export const RECIPES = [
     id: 'lemon-herb-chicken',
     name: 'Lemon Herb Chicken',
     category: 'Chicken',
-    url: 'https://www.recipetineats.com.au/lemon-herb-marinated-chicken-breast/',
+    url: 'https://www.recipetineats.com/creamy-lemon-chicken/',
     ingredients: [
       { name: 'Chicken breast', qty: '4', section: 'meat', perishable: true },
       { name: 'Lemon', qty: '2', section: 'produce', perishable: true },
@@ -129,7 +129,7 @@ export const RECIPES = [
     id: 'spaghetti-bolognese',
     name: 'Spaghetti Bolognese',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/spaghetti-bolognese/',
+    url: 'https://www.recipetineats.com/spaghetti-bolognese/',
     ingredients: [
       { name: 'Beef mince', qty: '500g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -143,7 +143,7 @@ export const RECIPES = [
     id: 'beef-stir-fry',
     name: 'Beef Stir Fry',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/beef-stir-fry/',
+    url: 'https://www.recipetineats.com/easy-classic-chinese-beef-stir-fry/',
     ingredients: [
       { name: 'Beef stir fry strips', qty: '500g', section: 'meat', perishable: true },
       { name: 'Broccolini', qty: '1 bunch', section: 'produce', perishable: true },
@@ -157,7 +157,7 @@ export const RECIPES = [
     id: 'mongolian-beef',
     name: 'Mongolian Beef',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/mongolian-beef/',
+    url: 'https://www.recipetineats.com/crispy-sticky-mongolian-beef/',
     ingredients: [
       { name: 'Beef strips', qty: '500g', section: 'meat', perishable: true },
       { name: 'Spring onions', qty: '4', section: 'produce', perishable: true },
@@ -169,7 +169,7 @@ export const RECIPES = [
     id: 'shepherds-pie',
     name: "Shepherd's Pie",
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/shepherds-pie/',
+    url: 'https://www.recipetineats.com/shepherds-pie/',
     ingredients: [
       { name: 'Lamb mince', qty: '500g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -186,7 +186,7 @@ export const RECIPES = [
     id: 'beef-tacos',
     name: 'Beef Tacos',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/beef-tacos/',
+    url: 'https://www.recipetineats.com/ground-beef-tacos-recipe/',
     ingredients: [
       { name: 'Beef mince', qty: '500g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -203,7 +203,7 @@ export const RECIPES = [
     id: 'roast-lamb',
     name: 'Slow Roasted Lamb Leg',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/slow-roasted-lamb-leg/',
+    url: 'https://www.recipetineats.com/slow-roast-leg-of-lamb/',
     ingredients: [
       { name: 'Lamb leg', qty: '2.5kg', section: 'meat', perishable: true },
       { name: 'Garlic', qty: '1 head', section: 'produce', perishable: true },
@@ -216,7 +216,7 @@ export const RECIPES = [
     id: 'beef-stew',
     name: 'Beef Stew',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/beef-stew/',
+    url: 'https://www.recipetineats.com/beef-stew/',
     ingredients: [
       { name: 'Beef chuck steak', qty: '1kg', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -231,7 +231,7 @@ export const RECIPES = [
     id: 'beef-burgers',
     name: 'Beef Burgers',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/juicy-beef-burgers/',
+    url: 'https://www.recipetineats.com/hamburger-recipe/',
     ingredients: [
       { name: 'Beef mince', qty: '600g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -246,7 +246,7 @@ export const RECIPES = [
     id: 'lasagne',
     name: 'Lasagne',
     category: 'Beef & Lamb',
-    url: 'https://www.recipetineats.com.au/lasagne/',
+    url: 'https://www.recipetineats.com/lasagna/',
     ingredients: [
       { name: 'Beef mince', qty: '600g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -264,7 +264,7 @@ export const RECIPES = [
     id: 'honey-garlic-pork-chops',
     name: 'Honey Garlic Pork Chops',
     category: 'Pork',
-    url: 'https://www.recipetineats.com.au/pork-chops/',
+    url: 'https://www.recipetineats.com/pork-chops/',
     ingredients: [
       { name: 'Pork chops', qty: '4', section: 'meat', perishable: true },
       { name: 'Garlic', qty: '4 cloves', section: 'produce', perishable: true },
@@ -275,7 +275,7 @@ export const RECIPES = [
     id: 'pork-stir-fry-noodles',
     name: 'Pork Stir Fry with Noodles',
     category: 'Pork',
-    url: 'https://www.recipetineats.com.au/asian-pork-noodle-soup/',
+    url: 'https://www.recipetineats.com/chinese-pork-mince-with-noodles/',
     ingredients: [
       { name: 'Pork mince', qty: '400g', section: 'meat', perishable: true },
       { name: 'Cabbage', qty: '1/4 small', section: 'produce', perishable: true },
@@ -291,7 +291,7 @@ export const RECIPES = [
     id: 'fish-and-chips',
     name: 'Fish and Chips',
     category: 'Seafood',
-    url: 'https://www.recipetineats.com.au/beer-battered-fish/',
+    url: 'https://www.recipetineats.com/crispy-beer-battered-fish/',
     ingredients: [
       { name: 'White fish fillets', qty: '600g', section: 'seafood', perishable: true },
       { name: 'Potatoes', qty: '800g', section: 'produce', perishable: true },
@@ -303,7 +303,7 @@ export const RECIPES = [
     id: 'garlic-butter-prawns',
     name: 'Garlic Butter Prawns',
     category: 'Seafood',
-    url: 'https://www.recipetineats.com.au/garlic-prawns/',
+    url: 'https://www.recipetineats.com/garlic-prawns-shrimp/',
     ingredients: [
       { name: 'Raw prawns (peeled)', qty: '600g', section: 'seafood', perishable: true },
       { name: 'Butter', qty: '80g', section: 'dairy', perishable: true },
@@ -317,7 +317,7 @@ export const RECIPES = [
     id: 'salmon-lemon-butter',
     name: 'Salmon with Lemon Butter Sauce',
     category: 'Seafood',
-    url: 'https://www.recipetineats.com.au/pan-fried-salmon/',
+    url: 'https://www.recipetineats.com/crispy-skin-salmon/',
     ingredients: [
       { name: 'Salmon fillets', qty: '4', section: 'seafood', perishable: true },
       { name: 'Butter', qty: '60g', section: 'dairy', perishable: true },
@@ -329,7 +329,7 @@ export const RECIPES = [
     id: 'fish-tacos',
     name: 'Fish Tacos',
     category: 'Seafood',
-    url: 'https://www.recipetineats.com.au/fish-tacos/',
+    url: 'https://www.recipetineats.com/marinated-fish-tacos/',
     ingredients: [
       { name: 'White fish fillets', qty: '500g', section: 'seafood', perishable: true },
       { name: 'Cabbage', qty: '1/4', section: 'produce', perishable: true },
@@ -344,7 +344,7 @@ export const RECIPES = [
     id: 'carbonara',
     name: 'Spaghetti Carbonara',
     category: 'Pasta & Noodles',
-    url: 'https://www.recipetineats.com.au/pasta-carbonara/',
+    url: 'https://www.recipetineats.com/carbonara/',
     ingredients: [
       { name: 'Bacon rashers', qty: '200g', section: 'meat', perishable: true },
       { name: 'Eggs', qty: '3', section: 'dairy', perishable: true },
@@ -355,7 +355,7 @@ export const RECIPES = [
     id: 'pesto-pasta',
     name: 'Pesto Pasta',
     category: 'Pasta & Noodles',
-    url: 'https://www.recipetineats.com.au/pesto-pasta/',
+    url: 'https://www.recipetineats.com/pesto-pasta/',
     ingredients: [
       { name: 'Cherry tomatoes', qty: '250g punnet', section: 'produce', perishable: true },
       { name: 'Parmesan', qty: '50g', section: 'dairy', perishable: true },
@@ -366,7 +366,7 @@ export const RECIPES = [
     id: 'tuna-pasta-bake',
     name: 'Tuna Pasta Bake',
     category: 'Pasta & Noodles',
-    url: 'https://www.recipetineats.com.au/tuna-pasta-bake/',
+    url: 'https://www.recipetineats.com/tuna-pasta-bake/',
     ingredients: [
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
       { name: 'Celery', qty: '2 stalks', section: 'produce', perishable: true },
@@ -377,7 +377,7 @@ export const RECIPES = [
     id: 'pasta-primavera',
     name: 'Pasta Primavera',
     category: 'Pasta & Noodles',
-    url: 'https://www.recipetineats.com.au/pasta-primavera/',
+    url: 'https://www.recipetineats.com/pasta-primavera/',
     ingredients: [
       { name: 'Zucchini', qty: '2', section: 'produce', perishable: true },
       { name: 'Asparagus', qty: '1 bunch', section: 'produce', perishable: true },
@@ -393,7 +393,7 @@ export const RECIPES = [
     id: 'chicken-fried-rice',
     name: 'Chicken Fried Rice',
     category: 'Asian',
-    url: 'https://www.recipetineats.com.au/fried-rice/',
+    url: 'https://www.recipetineats.com/chicken-fried-rice/',
     ingredients: [
       { name: 'Chicken breast', qty: '400g', section: 'meat', perishable: true },
       { name: 'Eggs', qty: '2', section: 'dairy', perishable: true },
@@ -407,7 +407,7 @@ export const RECIPES = [
     id: 'pad-thai',
     name: 'Pad Thai',
     category: 'Asian',
-    url: 'https://www.recipetineats.com.au/pad-thai/',
+    url: 'https://www.recipetineats.com/chicken-pad-thai/',
     ingredients: [
       { name: 'Chicken breast', qty: '300g', section: 'meat', perishable: true },
       { name: 'Eggs', qty: '2', section: 'dairy', perishable: true },
@@ -421,7 +421,7 @@ export const RECIPES = [
     id: 'teriyaki-chicken',
     name: 'Teriyaki Chicken',
     category: 'Asian',
-    url: 'https://www.recipetineats.com.au/teriyaki-chicken/',
+    url: 'https://www.recipetineats.com/teriyaki-chicken/',
     ingredients: [
       { name: 'Chicken thighs', qty: '800g', section: 'meat', perishable: true },
       { name: 'Spring onions', qty: '2', section: 'produce', perishable: true },
@@ -431,7 +431,7 @@ export const RECIPES = [
     id: 'japanese-curry',
     name: 'Japanese Chicken Curry',
     category: 'Asian',
-    url: 'https://www.recipetineats.com.au/japanese-curry/',
+    url: 'https://japan.recipetineats.com/katsu-curry-japanese-curry-rice-with-chicken-cutlet/',
     ingredients: [
       { name: 'Chicken thighs', qty: '600g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -443,7 +443,7 @@ export const RECIPES = [
     id: 'kung-pao-chicken',
     name: 'Kung Pao Chicken',
     category: 'Asian',
-    url: 'https://www.recipetineats.com.au/kung-pao-chicken/',
+    url: 'https://www.recipetineats.com/kung-pao-chicken/',
     ingredients: [
       { name: 'Chicken breast', qty: '500g', section: 'meat', perishable: true },
       { name: 'Capsicum', qty: '1', section: 'produce', perishable: true },
@@ -458,7 +458,7 @@ export const RECIPES = [
     id: 'chicken-tacos',
     name: 'Chicken Tacos',
     category: 'Mexican',
-    url: 'https://www.recipetineats.com.au/chicken-tacos/',
+    url: 'https://www.recipetineats.com/chicken-tacos-with-sauce/',
     ingredients: [
       { name: 'Chicken breast', qty: '600g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -473,7 +473,7 @@ export const RECIPES = [
     id: 'nachos',
     name: 'Nachos',
     category: 'Mexican',
-    url: 'https://www.recipetineats.com.au/nachos/',
+    url: 'https://www.recipetineats.com/ripper-beef-nachos/',
     ingredients: [
       { name: 'Beef mince', qty: '400g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -488,7 +488,7 @@ export const RECIPES = [
     id: 'burrito-bowls',
     name: 'Burrito Bowls',
     category: 'Mexican',
-    url: 'https://www.recipetineats.com.au/burrito-bowl/',
+    url: 'https://www.recipetineats.com/chicken-burrito/',
     ingredients: [
       { name: 'Chicken breast', qty: '600g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -504,7 +504,7 @@ export const RECIPES = [
     id: 'quesadillas',
     name: 'Quesadillas',
     category: 'Mexican',
-    url: 'https://www.recipetineats.com.au/chicken-quesadillas/',
+    url: 'https://www.recipetineats.com/crispy-oven-baked-quesadillas/',
     ingredients: [
       { name: 'Chicken breast', qty: '500g', section: 'meat', perishable: true },
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
@@ -520,7 +520,7 @@ export const RECIPES = [
     id: 'vegetable-curry',
     name: 'Vegetable Curry',
     category: 'Vegetarian',
-    url: 'https://www.recipetineats.com.au/vegetable-curry/',
+    url: 'https://www.recipetineats.com/vegetable-curry/',
     ingredients: [
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
       { name: 'Garlic', qty: '3 cloves', section: 'produce', perishable: true },
@@ -534,7 +534,7 @@ export const RECIPES = [
     id: 'lentil-soup',
     name: 'Lentil Soup',
     category: 'Vegetarian',
-    url: 'https://www.recipetineats.com.au/lentil-soup/',
+    url: 'https://www.recipetineats.com/lentil-soup/',
     ingredients: [
       { name: 'Brown onion', qty: '1', section: 'produce', perishable: true },
       { name: 'Carrot', qty: '2', section: 'produce', perishable: true },
@@ -548,7 +548,7 @@ export const RECIPES = [
     id: 'veggie-fried-rice',
     name: 'Veggie Fried Rice',
     category: 'Vegetarian',
-    url: 'https://www.recipetineats.com.au/fried-rice/',
+    url: 'https://www.recipetineats.com/chicken-fried-rice/',
     ingredients: [
       { name: 'Eggs', qty: '3', section: 'dairy', perishable: true },
       { name: 'Frozen peas & corn', qty: '1 cup', section: 'produce', perishable: true },
